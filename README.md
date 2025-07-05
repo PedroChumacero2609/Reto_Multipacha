@@ -63,7 +63,7 @@ source /opt/ros/jazzy/setup.bash
 ## Desarrollo en ROS
 
 ### Parte 1
-#### Manejo de Directorios y Paquetes
+### Manejo de Directorios y Paquetes
 
 Para comenzar con el desarrollo del proyecto, primero preparé el espacio de trabajo de ROS2 y creé la estructura básica del paquete que utilicé durante el desarrollo.
 
@@ -88,8 +88,8 @@ ros2 pkg create reto_m6 --build-type ament_python --dependencies rclpy rviz2
 cd reto_m6
 mkdir launch urdf
 ```
-#### Tópicos publicadores y suscriptores
-##### Creación del Publicador
+### Tópicos publicadores y suscriptores
+### Creación del Publicador
 1. Creé el archivo Python reto_topic_pub.py dentro del subdirectorio del paquete que contiene los scripts (es decir, dentro de reto_m6/reto_m6/):
 ```bash
 cd reto_m6/reto_m6
@@ -275,14 +275,14 @@ Para esta parte del reto, el objetivo fue crear un modelo simple en formato URDF
 
 </robot>
 ```
-##### Detalles del modelo
+### Detalles del modelo
 base_link: representa la base del robot. Es una caja azul de 40 x 40 x 10 cm.
 arm_link: es un brazo en forma de cilindro rojo de 5 cm de radio y 50 cm de largo, montado verticalmente sobre la base.
 base_to_arm: es una articulación de tipo revolute, lo que permite que el brazo gire sobre el eje Z. Esta unión conecta los dos enlaces.
 
-#### Archivos Launch
+### Archivos Launch
 Para facilitar la ejecución de los nodos y la visualización del robot en RViz, creé tres archivos launch dentro del directorio launch del paquete reto_m6.
-##### Launch del nodo reto_topic_pub.py
+### Launch del nodo reto_topic_pub.py
 1. Creé el archivo Launch del nodo reto_topic_pub.py. Fui a la carpeta reto_m6/launch y creé un archivo llamado launch_pub.py.
 2. Dentro del archivo escribí el siguiente código, que lanza el nodo publicador:
 ```python
@@ -298,7 +298,7 @@ def generate_launch_description():
         )
     ])
 ```
-##### Launch del nodo reto_topic_sub.py
+### Launch del nodo reto_topic_sub.py
 1. Creé el archivo Launch del nodo reto_topic_sub.py. Fui a la capeta reto_m6/launch y creé el archivo llamado launch_sub.py.
 2. Dentro del archivo escribí el siguiente código:
 ```python
