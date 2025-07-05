@@ -123,6 +123,7 @@ ros2 run reto_m6 reto_topic_pub
 ```
 6. Como resultado, observé en la terminal la publicación continua del mensaje "M6 Reto" a 10 Hz:
 ![Publicador de Tópicos](img/pub.png)
+
 Esto confirmó que el nodo reto_topic_pub funcionaba correctamente. 
 
 ### Creación del Suscriptor
@@ -159,6 +160,7 @@ ros2 run reto_m6 reto_topic_sub
 ```
 7. Como resultado, pude observar en el terminal de la derecha cómo el nodo suscriptor recibía y mostraba el mensaje "M6 Reto" publicado por el nodo publicador del terminal de la izquierda:
 ![Publicador y Suscriptor de Tópicos](img/pub_sub.png)
+
 Esto confirmó que el nodo reto_topic_sub estaba funcionando correctamente y comunicándose con el nodo reto_topic_pub.
 
 ## Modelado URDF
