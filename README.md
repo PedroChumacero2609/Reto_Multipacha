@@ -240,7 +240,7 @@ source install/setup.bash
 ros2 run reto_m6 reto_pointcloud_pub
 ```
 En la terminal pude ver los logs confirmando la publicación del mensaje:
-![Publicador y Suscriptor de Tópicos](./docs/img/3_puntos_codigo.png)
+![3 puntos_código](img/3_puntos_codigo.png)
 
 ### Visualización en Rviz2
 ```bash
