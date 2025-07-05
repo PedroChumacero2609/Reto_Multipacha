@@ -62,7 +62,7 @@ source /opt/ros/jazzy/setup.bash
 ```
 ## Desarrollo en ROS
 
-### Parte 1
+## Parte 1
 ### Manejo de Directorios y Paquetes
 
 Para comenzar con el desarrollo del proyecto, primero preparé el espacio de trabajo de ROS2 y creé la estructura básica del paquete que utilicé durante el desarrollo.
@@ -161,7 +161,7 @@ ros2 run reto_m6 reto_topic_pub
 ![Publicador y Suscriptor de Tópicos](./docs/img/pub.png)
 Esto confirmó que el nodo reto_topic_pub funcionaba correctamente. 
 
-##### Creación del Suscriptor
+### Creación del Suscriptor
 1. Creé el archivo Python `reto_topic_sub.py` dentro del subdirectorio del paquete que contiene los scripts (es decir, dentro de `reto_m6/reto_m6/`):
 ```bash
 cd reto_m6/reto_m6
@@ -228,8 +228,8 @@ ros2 run reto_m6 reto_topic_sub
 ![Publicador y Suscriptor de Tópicos](./docs/img/sub.png)
 Esto confirmó que el nodo reto_topic_sub estaba funcionando correctamente y comunicándose con el nodo reto_topic_pub.
 
-#### Modelado URDF
-##### Creación del modelo básico del robot `ret_robot`
+## Modelado URDF
+### Creación del modelo básico del robot `ret_robot`
 Para esta parte del reto, el objetivo fue crear un modelo simple en formato URDF para representar un robot con al menos dos enlaces (links) y una articulación de tipo revolute o continuous.
 1. Primero, dentro del paquete `reto_m6`, navegué al directorio `urdf`.
 2. Luego, creé el archivo reto_robot.urdf desde Visual Studio Code.
@@ -280,7 +280,7 @@ base_link: representa la base del robot. Es una caja azul de 40 x 40 x 10 cm.
 arm_link: es un brazo en forma de cilindro rojo de 5 cm de radio y 50 cm de largo, montado verticalmente sobre la base.
 base_to_arm: es una articulación de tipo revolute, lo que permite que el brazo gire sobre el eje Z. Esta unión conecta los dos enlaces.
 
-### Archivos Launch
+## Archivos Launch
 Para facilitar la ejecución de los nodos y la visualización del robot en RViz, creé tres archivos launch dentro del directorio launch del paquete reto_m6.
 ### Launch del nodo reto_topic_pub.py
 1. Creé el archivo Launch del nodo reto_topic_pub.py. Fui a la carpeta reto_m6/launch y creé un archivo llamado launch_pub.py.
@@ -315,7 +315,7 @@ def generate_launch_description():
         )
     ])
 ```
-##### Launch del nodo reto_robot.urdf
+### Launch del nodo reto_robot.urdf
 1. Creé el archivo Launch del modelo URDF en RViz con joint_state_publisher_gui. El archivo lo llamé launch_urdf_rviz.py en la misma carpeta launch:
 ```python
 from launch import LaunchDescription
@@ -359,7 +359,7 @@ def generate_launch_description():
 -La GUI para mover la junta del robot.
 -El modelo URDF con robot_state_publisher.
 -La interfaz RViz2 para visualizar el robot en 3D.
-##### Compilación de los archivos
+### Compilación de los archivos
 Después de crear los archivos Launch, regresé a la raíz del workspace y compilé todo:
 ```bash
 cd ~/multipacha_ws
@@ -381,11 +381,11 @@ ros2 launch reto_m6 launch_urdf_rviz.py
 Al lanzar el último archivo, se abrió la interfaz de RViz y la ventana del joint_state_publisher_gui, donde pude mover la junta del robot:
 ![Publicador y Suscriptor de Tópicos](./docs/img/Junta.png)
 
-### Parte 2
-#### ¿Qué es sensor_msgs/PointCloud2?
+## Parte 2
+### ¿Qué es sensor_msgs/PointCloud2?
 El mensaje sensor_msgs/PointCloud2 es un tipo de mensaje utilizado en ROS 2 para representar nubes de puntos 3D, que normalmente provienen de sensores como LIDAR o cámaras RGB-D. Cada punto en la nube contiene al menos coordenadas x, y, z, y, opcionalmente, otros campos como rgb, intensidad, etc. Este mensaje es muy eficiente ya que empaqueta los datos como un arreglo binario, con su estructura (campos, tipo, offset, etc.), permitiendo representar miles de puntos sin perder rendimiento.
 
-#### Creación del publicador reto_pointcloud_pub.py
+### Creación del publicador reto_pointcloud_pub.py
 1. Creé el archivo dentro del subdirectorio del paquete:
 ```bash
 cd ~/multipacha_ws/src/reto_m6/reto_m6
@@ -478,8 +478,7 @@ ros2 run reto_m6 reto_pointcloud_pub
 En la terminal pude ver los logs confirmando la publicación del mensaje:
 ![Publicador y Suscriptor de Tópicos](./docs/img/3_puntos_codigo.png)
 
-####
-6. Finalmente, abrí Rviz2 para visualizar los puntos:
+### Visualización en Rviz2
 ```bash
 rviz2
 ```
@@ -489,6 +488,6 @@ rviz2
 -En el campo Topic, seleccioné /reto_pointcloud.
 
 ## Desarrollo para PointCloud
-### Parte 1
+## Parte 1
 
-### Parte 2
+## Parte 2
