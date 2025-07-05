@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/reto_m6/reto_m6.egg-info/PKG-INFO
+writing dependency_links to ../../build/reto_m6/reto_m6.egg-info/dependency_links.txt
+writing entry points to ../../build/reto_m6/reto_m6.egg-info/entry_points.txt
+writing requirements to ../../build/reto_m6/reto_m6.egg-info/requires.txt
+writing top-level names to ../../build/reto_m6/reto_m6.egg-info/top_level.txt
+reading manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/reto_m6/reto_m6.egg-info to /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info
+running install_scripts
+Installing pcl_shape_detector script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+Installing pub_circle script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+Installing pub_square script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+Installing reto_pointcloud_pub script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+Installing reto_topic_pub script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+Installing reto_topic_sub script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+writing list of installed files to '/home/pedro2609/multipacha_ws/build/reto_m6/install.log'

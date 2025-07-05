@@ -1,0 +1,35 @@
+[0.665s] Invoking command in '/home/pedro2609/multipacha_ws/src/reto_m6': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pedro2609/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/pedro2609/multipacha_ws/build/reto_m6/build install --record /home/pedro2609/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data
+[0.856s] running egg_info
+[0.856s] creating ../../build/reto_m6/reto_m6.egg-info
+[0.876s] writing ../../build/reto_m6/reto_m6.egg-info/PKG-INFO
+[0.876s] writing dependency_links to ../../build/reto_m6/reto_m6.egg-info/dependency_links.txt
+[0.876s] writing requirements to ../../build/reto_m6/reto_m6.egg-info/requires.txt
+[0.876s] writing top-level names to ../../build/reto_m6/reto_m6.egg-info/top_level.txt
+[0.876s] writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.902s] reading manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.902s] writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.902s] running build
+[0.902s] running build_py
+[0.902s] creating /home/pedro2609/multipacha_ws/build/reto_m6/build
+[0.902s] creating /home/pedro2609/multipacha_ws/build/reto_m6/build/lib
+[0.902s] creating /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6
+[0.902s] copying reto_m6/__init__.py -> /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6
+[0.903s] copying reto_m6/reto_topic_pub.py -> /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6
+[0.903s] running install
+[0.907s] running install_lib
+[0.924s] creating /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+[0.924s] copying /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6/__init__.py -> /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+[0.924s] copying /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6/reto_topic_pub.py -> /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+[0.925s] byte-compiling /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6/__init__.py to __init__.cpython-312.pyc
+[0.925s] byte-compiling /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6/reto_topic_pub.py to reto_topic_pub.cpython-312.pyc
+[0.925s] running install_data
+[0.925s] creating /home/pedro2609/multipacha_ws/install/reto_m6/share/ament_index
+[0.925s] creating /home/pedro2609/multipacha_ws/install/reto_m6/share/ament_index/resource_index
+[0.925s] creating /home/pedro2609/multipacha_ws/install/reto_m6/share/ament_index/resource_index/packages
+[0.925s] copying resource/reto_m6 -> /home/pedro2609/multipacha_ws/install/reto_m6/share/ament_index/resource_index/packages
+[0.925s] copying package.xml -> /home/pedro2609/multipacha_ws/install/reto_m6/share/reto_m6
+[0.925s] running install_egg_info
+[0.939s] Copying ../../build/reto_m6/reto_m6.egg-info to /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info
+[0.940s] running install_scripts
+[1.031s] writing list of installed files to '/home/pedro2609/multipacha_ws/build/reto_m6/install.log'
+[1.050s] Invoked command in '/home/pedro2609/multipacha_ws/src/reto_m6' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pedro2609/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/pedro2609/multipacha_ws/build/reto_m6/build install --record /home/pedro2609/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data

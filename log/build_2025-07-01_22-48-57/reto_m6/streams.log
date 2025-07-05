@@ -1,0 +1,32 @@
+[0.561s] Invoking command in '/home/pedro2609/multipacha_ws/src/reto_m6': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pedro2609/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/pedro2609/multipacha_ws/build/reto_m6/build install --record /home/pedro2609/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data
+[0.744s] running egg_info
+[0.757s] writing ../../build/reto_m6/reto_m6.egg-info/PKG-INFO
+[0.757s] writing dependency_links to ../../build/reto_m6/reto_m6.egg-info/dependency_links.txt
+[0.757s] writing entry points to ../../build/reto_m6/reto_m6.egg-info/entry_points.txt
+[0.757s] writing requirements to ../../build/reto_m6/reto_m6.egg-info/requires.txt
+[0.757s] writing top-level names to ../../build/reto_m6/reto_m6.egg-info/top_level.txt
+[0.784s] reading manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.785s] writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.785s] running build
+[0.785s] running build_py
+[0.785s] copying reto_m6/pub_circulo.py -> /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6
+[0.785s] copying reto_m6/pub_cuadrado.py -> /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6
+[0.785s] running install
+[0.790s] running install_lib
+[0.804s] copying /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6/pub_circulo.py -> /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+[0.804s] copying /home/pedro2609/multipacha_ws/build/reto_m6/build/lib/reto_m6/pub_cuadrado.py -> /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+[0.805s] byte-compiling /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6/pub_circulo.py to pub_circulo.cpython-312.pyc
+[0.805s] byte-compiling /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6/pub_cuadrado.py to pub_cuadrado.cpython-312.pyc
+[0.806s] running install_data
+[0.806s] running install_egg_info
+[0.824s] removing '/home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info' (and everything under it)
+[0.824s] Copying ../../build/reto_m6/reto_m6.egg-info to /home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info
+[0.824s] running install_scripts
+[0.913s] Installing pcl_shape_detector script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.913s] Installing pub_circulo script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.913s] Installing pub_cuadrado script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.913s] Installing reto_pointcloud_pub script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.913s] Installing reto_topic_pub script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.914s] Installing reto_topic_sub script to /home/pedro2609/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.914s] writing list of installed files to '/home/pedro2609/multipacha_ws/build/reto_m6/install.log'
+[0.936s] Invoked command in '/home/pedro2609/multipacha_ws/src/reto_m6' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pedro2609/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pedro2609/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/pedro2609/multipacha_ws/build/reto_m6/build install --record /home/pedro2609/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data
