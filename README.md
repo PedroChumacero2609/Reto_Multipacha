@@ -229,7 +229,7 @@ ros2 run reto_m6 reto_topic_sub
 Esto confirmó que el nodo reto_topic_sub estaba funcionando correctamente y comunicándose con el nodo reto_topic_pub.
 
 ## Modelado URDF
-### Creación del modelo básico del robot `ret_robot`
+### Creación del modelo básico del robot `reto_robot`
 Para esta parte del reto, el objetivo fue crear un modelo simple en formato URDF para representar un robot con al menos dos enlaces (links) y una articulación de tipo revolute o continuous.
 1. Primero, dentro del paquete `reto_m6`, navegué al directorio `urdf`.
 2. Luego, creé el archivo reto_robot.urdf desde Visual Studio Code.
