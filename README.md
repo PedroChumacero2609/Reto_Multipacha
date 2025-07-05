@@ -280,9 +280,9 @@ Para esta parte del reto, el objetivo fue crear un modelo simple en formato URDF
 </robot>
 ```
 ### Detalles del modelo
--base_link: representa la base del robot. Es una caja azul de 40 x 40 x 10 cm.
--arm_link: es un brazo en forma de cilindro rojo de 5 cm de radio y 50 cm de largo, montado verticalmente sobre la base.
--base_to_arm: es una articulación de tipo revolute, lo que permite que el brazo gire sobre el eje Z. Esta unión conecta los dos enlaces.
+- base_link: representa la base del robot. Es una caja azul de 40 x 40 x 10 cm.
+- arm_link: es un brazo en forma de cilindro rojo de 5 cm de radio y 50 cm de largo, montado verticalmente sobre la base.
+- base_to_arm: es una articulación de tipo revolute, lo que permite que el brazo gire sobre el eje Z. Esta unión conecta los dos enlaces.
 
 ## Archivos Launch
 Para facilitar la ejecución de los nodos y la visualización del robot en RViz, creé tres archivos launch dentro del directorio launch del paquete reto_m6.
@@ -363,9 +363,9 @@ def generate_launch_description():
     ])
 ```
 2. Este archivo lanza:
--La GUI para mover la junta del robot.
--El modelo URDF con robot_state_publisher.
--La interfaz RViz2 para visualizar el robot en 3D.
+- La GUI para mover la junta del robot.
+- El modelo URDF con robot_state_publisher.
+- La interfaz RViz2 para visualizar el robot en 3D.
 
 ### Compilación de los archivos
 
@@ -494,9 +494,9 @@ En la terminal pude ver los logs confirmando la publicación del mensaje:
 rviz2
 ```
 ![Publicador y Suscriptor de Tópicos](./docs/img/3_puntos_grafica.png)
--Cambié el Fixed Frame a map (importante para ver los datos correctamente).
--Hice clic en "Add" → Seleccioné "PointCloud2" → OK
--En el campo Topic, seleccioné /reto_pointcloud.
+- Cambié el Fixed Frame a map (importante para ver los datos correctamente).
+- Hice clic en "Add" → Seleccioné "PointCloud2" → OK
+- En el campo Topic, seleccioné /reto_pointcloud.
 
 ## III. Desarrollo para PointCloud
 
