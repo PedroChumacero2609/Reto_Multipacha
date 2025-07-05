@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="reto_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="reto_robot">
 
   <!-- Link base -->
   <link name="base_link">

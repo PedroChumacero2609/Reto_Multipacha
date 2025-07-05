@@ -1,24 +1,25 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import ExecuteProcess
-from launch.substitutions import FindExecutable, PathJoinSubstitution
+from launch.actions import OpaqueFunction
 from launch_ros.substitutions import FindPackageShare
+import os
 
-def generate_launch_description():
-    urdf_path = PathJoinSubstitution([
-        FindPackageShare('reto_m6'),
-        'urdf',
-        'ret_robot.urdf'
-    ])
+def launch_setup(context, *args, **kwargs):
+    pkg_share = FindPackageShare('reto_m6').perform(context)
+    urdf_path = os.path.join(pkg_share, 'urdf', 'reto_robot.urdf')
 
-    return LaunchDescription([
-        # Publica los estados de las juntas con interfaz gráfica
+    # Lee el contenido del archivo URDF
+    with open(urdf_path, 'r') as urdf_file:
+        robot_description = urdf_file.read()
+
+    return [
+        # GUI para mover juntas
         Node(
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui',
             name='joint_state_publisher_gui',
             output='screen',
-            parameters=[{'robot_description': urdf_path}]
+            parameters=[{'robot_description': robot_description}]
         ),
 
         # Publica el modelo del robot
@@ -26,19 +27,20 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             name='robot_state_publisher',
-            parameters=[{'robot_description': PathJoinSubstitution([
-                FindPackageShare('reto_m6'),
-                'urdf',
-                'ret_robot.urdf'
-            ])}]
+            output='screen',
+            parameters=[{'robot_description': robot_description}]
         ),
 
-        # Lanzar RViz
+        # Lanzar RViz sin archivo -d
         Node(
             package='rviz2',
             executable='rviz2',
             name='rviz2',
-            arguments=['-d'],
             output='screen'
         )
+    ]
+
+def generate_launch_description():
+    return LaunchDescription([
+        OpaqueFunction(function=launch_setup)
     ])

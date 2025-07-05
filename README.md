@@ -256,8 +256,4 @@ Con esto, ya se pudo ver los puntos publicados (x=1, y=1, z=1).
 
 ## Parte 1
 
-<<<<<<< HEAD
 ## Parte 2
-=======
-## Parte 2
->>>>>>> 931ab8b (first commit)
