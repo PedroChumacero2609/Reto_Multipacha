@@ -246,10 +246,11 @@ En la terminal pude ver los logs confirmando la publicación del mensaje:
 ```bash
 rviz2
 ```
-![Publicador y Suscriptor de Tópicos](./docs/img/3_puntos_grafica.png)
-- Cambié el Fixed Frame a map (importante para ver los datos correctamente).
-- Hice clic en "Add" → Seleccioné "PointCloud2" → OK
+![3_puntos_grafica](img/3_puntos_grafica.png)
+- Cambié el Fixed Frame a map.
+- Hice clic en "Add" → Seleccioné "PointCloud2".
 - En el campo Topic, seleccioné /reto_pointcloud.
+Con esto, ya se pudo ver los puntos publicados (x=1, y=1, z=1).
 
 ## III. Desarrollo para PointCloud
 
