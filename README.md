@@ -66,7 +66,7 @@ source /opt/ros/jazzy/setup.bash
 ## Parte 1
 
 ### Manejo de Directorios y Paquetes
-Para comenzar con el desarrollo del proyecto, primero preparé el espacio de trabajo de ROS2 y creé la estructura básica del paquete que utilicé durante el desarrollo.
+Para comenzar con el desarrollo de este reto, primero preparé el espacio de trabajo de ROS2 y creé la estructura básica del paquete que utilicé durante el desarrollo.
 
 1. Abrí una terminal normal para asegurarme de estar en mi directorio personal:
 ```bash
@@ -498,7 +498,7 @@ rviz2
 -Hice clic en "Add" → Seleccioné "PointCloud2" → OK
 -En el campo Topic, seleccioné /reto_pointcloud.
 
-## Desarrollo para PointCloud
+## III. Desarrollo para PointCloud
 
 ## Parte 1
 
