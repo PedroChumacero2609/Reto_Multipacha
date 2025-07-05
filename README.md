@@ -83,7 +83,7 @@ code .
 cd src
 ros2 pkg create reto_m6 --build-type ament_python --dependencies rclpy rviz2
 ```
-4. Exitosamente, el paquete se creó correctamente en la ruta ~/multipacha_ws/src/reto_m6.
+4. El paquete se creó correctamente en la ruta ~/multipacha_ws/src/reto_m6.
 5. Después, ingresé al directorio del paquete para crear las carpetas necesarias para los archivos de lanzamiento y el modelo del robot:
 ```bash
 cd reto_m6
