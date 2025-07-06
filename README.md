@@ -200,10 +200,10 @@ ros2 launch reto_m6 launch_sub.py
 ```
 Visualizar el robot en RViz2 y manipular la articulación:
 ```bash
-ros2 launch reto_m6 launch_urdf_rviz.py
+ros2 launch reto_m6 launch_robot.py
 ```
 Al lanzar el último archivo, se abrió la interfaz de RViz y la ventana del joint_state_publisher_gui, donde pude mover la junta del robot:
-![Publicador y Suscriptor de Tópicos](./docs/img/Junta.png)
+![Junta](img/junta.png)
 
 ## Parte 2
 ### ¿Qué es sensor_msgs/PointCloud2?
