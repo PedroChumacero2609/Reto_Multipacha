@@ -1,7 +1,8 @@
 [console_scripts]
-pcl_shape_detector = reto_m6.pcl_shape_detector:main
-pub_circulo = reto_m6.pub_circulo:main
-pub_cuadrado = reto_m6.pub_cuadrado:main
+circle_point_detector = reto_m6.circle_point_detector:main
+circle_point_publisher = reto_m6.circle_point_publisher:main
+figure_detector = reto_m6.figure_detector:main
+figure_publisher = reto_m6.figure_publisher:main
 reto_pointcloud_pub = reto_m6.reto_pointcloud_pub:main
 reto_topic_pub = reto_m6.reto_topic_pub:main
 reto_topic_sub = reto_m6.reto_topic_sub:main
