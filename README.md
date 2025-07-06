@@ -254,6 +254,25 @@ Con esto, ya se pudo ver los puntos publicados (x=1, y=1, z=1).
 
 ## III. Desarrollo para PointCloud
 
-## Parte 1
+## Parte 1: Detección de Figuras con PointCloud2
 
-## Parte 2
+En esta sección, se implementa un sistema de reconocimiento de figuras geométricas (círculo, cuadrado y triángulo) utilizando mensajes de tipo `sensor_msgs/msg/PointCloud2`. En el archivo figure_publisher.py (ubicado dentro de la carpeta reto_m6), se generan cada 5 segundos las figuras mencionadas anteriormente. Mientras tanto, en el archivo figure_detector.py comienza a detectar que figura se está publicando. Para corroborar esta idea, corrí dos terminales:
+
+![Figuras](img/pub_detector.png)
+
+Ahora lo visualizamos en RViz2:
+
+![Figuras1](img/cuadrado.png)
+
+![Figuras2](img/circulo.png)
+
+![Figuras3](img/triangulo.png)
+
+## Parte 2: Detección de Puntos Internos
+En esta sección, se desarrolla un sistema ROS 2 que genera una nube de puntos aleatorios junto con un círculo centrado en el origen (circle_point_publisher.py). Luego, un nodo suscriptor (circle_point_detector.py) analiza cuántos de los puntos aleatorios caen dentro del círculo, excluyendo aquellos que se encuentren en el borde. Para corroborar esta idea, corrí dos terminales:
+
+![Punto1](img/contador.png)
+
+Ahora lo visualizamos en RViz2:
+
+![Puntos2](img/circle_detector.png)
