@@ -1,0 +1,18 @@
+[0.541s] Invoking command in '/home/zahir/multipacha_ws/src/reto_m6': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zahir/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/zahir/multipacha_ws/build/reto_m6/build install --record /home/zahir/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data
+[0.728s] running egg_info
+[0.742s] writing ../../build/reto_m6/reto_m6.egg-info/PKG-INFO
+[0.742s] writing dependency_links to ../../build/reto_m6/reto_m6.egg-info/dependency_links.txt
+[0.742s] writing entry points to ../../build/reto_m6/reto_m6.egg-info/entry_points.txt
+[0.742s] writing requirements to ../../build/reto_m6/reto_m6.egg-info/requires.txt
+[0.742s] writing top-level names to ../../build/reto_m6/reto_m6.egg-info/top_level.txt
+[0.770s] reading manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.770s] writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.770s] running build
+[0.770s] running build_py
+[0.771s] running install
+[0.775s] running install_lib
+[0.789s] running install_data
+[0.790s] copying launch/launch_robot.py -> /home/zahir/multipacha_ws/install/reto_m6/share/reto_m6/launch
+[0.790s] creating /home/zahir/multipacha_ws/install/reto_m6/share/reto_m6/config
+[0.790s] error: can't copy 'config/urdf.rviz': doesn't exist or not a regular file
+[0.805s] Invoked command in '/home/zahir/multipacha_ws/src/reto_m6' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zahir/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/zahir/multipacha_ws/build/reto_m6/build install --record /home/zahir/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data

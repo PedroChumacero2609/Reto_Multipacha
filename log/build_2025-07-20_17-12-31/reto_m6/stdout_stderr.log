@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/reto_m6/reto_m6.egg-info/PKG-INFO
+writing dependency_links to ../../build/reto_m6/reto_m6.egg-info/dependency_links.txt
+writing entry points to ../../build/reto_m6/reto_m6.egg-info/entry_points.txt
+writing requirements to ../../build/reto_m6/reto_m6.egg-info/requires.txt
+writing top-level names to ../../build/reto_m6/reto_m6.egg-info/top_level.txt
+reading manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+running build
+running build_py
+copying reto_m6/reto_topic_pub.py -> /home/zahir/multipacha_ws/build/reto_m6/build/lib/reto_m6
+copying reto_m6/reto_topic_sub.py -> /home/zahir/multipacha_ws/build/reto_m6/build/lib/reto_m6
+running install
+running install_lib
+copying /home/zahir/multipacha_ws/build/reto_m6/build/lib/reto_m6/reto_topic_pub.py -> /home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+copying /home/zahir/multipacha_ws/build/reto_m6/build/lib/reto_m6/reto_topic_sub.py -> /home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6
+byte-compiling /home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6/reto_topic_pub.py to reto_topic_pub.cpython-312.pyc
+byte-compiling /home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6/reto_topic_sub.py to reto_topic_sub.cpython-312.pyc
+running install_data
+copying urdf/reto_robot.urdf -> /home/zahir/multipacha_ws/install/reto_m6/share/reto_m6/urdf
+copying launch/launch_robot.py -> /home/zahir/multipacha_ws/install/reto_m6/share/reto_m6/launch
+error: can't copy 'launch/display.launch.py': doesn't exist or not a regular file

@@ -1,0 +1,27 @@
+[0.580s] Invoking command in '/home/zahir/multipacha_ws/src/reto_m6': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zahir/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/zahir/multipacha_ws/build/reto_m6/build install --record /home/zahir/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data
+[0.763s] running egg_info
+[0.776s] writing ../../build/reto_m6/reto_m6.egg-info/PKG-INFO
+[0.776s] writing dependency_links to ../../build/reto_m6/reto_m6.egg-info/dependency_links.txt
+[0.776s] writing entry points to ../../build/reto_m6/reto_m6.egg-info/entry_points.txt
+[0.777s] writing requirements to ../../build/reto_m6/reto_m6.egg-info/requires.txt
+[0.777s] writing top-level names to ../../build/reto_m6/reto_m6.egg-info/top_level.txt
+[0.804s] reading manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.804s] writing manifest file '../../build/reto_m6/reto_m6.egg-info/SOURCES.txt'
+[0.804s] running build
+[0.805s] running build_py
+[0.805s] running install
+[0.810s] running install_lib
+[0.824s] running install_data
+[0.824s] running install_egg_info
+[0.838s] removing '/home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info' (and everything under it)
+[0.838s] Copying ../../build/reto_m6/reto_m6.egg-info to /home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages/reto_m6-0.0.0-py3.12.egg-info
+[0.839s] running install_scripts
+[0.928s] Installing circle_point_detector script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] Installing circle_point_publisher script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] Installing figure_detector script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] Installing figure_publisher script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] Installing reto_pointcloud_pub script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] Installing reto_topic_pub script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] Installing reto_topic_sub script to /home/zahir/multipacha_ws/install/reto_m6/lib/reto_m6
+[0.928s] writing list of installed files to '/home/zahir/multipacha_ws/build/reto_m6/install.log'
+[0.949s] Invoked command in '/home/zahir/multipacha_ws/src/reto_m6' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/zahir/multipacha_ws/build/reto_m6/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zahir/multipacha_ws/install/reto_m6/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reto_m6 build --build-base /home/zahir/multipacha_ws/build/reto_m6/build install --record /home/zahir/multipacha_ws/build/reto_m6/install.log --single-version-externally-managed install_data

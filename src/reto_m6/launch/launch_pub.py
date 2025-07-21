@@ -1,6 +1,8 @@
+# Módulos para definir el archivo launch
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
+# Función principal
 def generate_launch_description():
     return LaunchDescription([
         Node(

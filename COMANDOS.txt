@@ -1,0 +1,27 @@
+COMANDOS
+cd ~/multipacha_ws
+colcon build
+source install/setup.bash
+source /opt/ros/jazzy/setup.bash
+
+-PUBLICADOR y SUSCRIPTOR:
+ros2 run reto_m6 reto_topic_pub
+ros2 run reto_m6 reto_topic_sub
+
+-LAUNCH 1:
+ros2 launch reto_m6 launch_pub.py
+ros2 launch reto_m6 launch_sub.py
+
+-LAUNCH 2:
+ros2 launch reto_m6 launch_robot.py
+
+-POINTCLOUD2: Triángulo en el espacio:
+ros2 run reto_m6 reto_pointcloud_pub
+
+-POINTCLOUD2: Detección de figuras:
+ros2 run reto_m6 figure_publisher
+ros2 run reto_m6 figure_detector
+
+-POINTCLOUD2: Puntos encerrados:
+ros2 run reto_m6 circle_point_publisher
+ros2 run reto_m6 circle_point_detector

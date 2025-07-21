@@ -1,39 +1,54 @@
 <?xml version="1.0"?>
 <robot name="reto_robot">
 
+  <!-- DEFINICIÓN DE COLORES -->
+  <material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="1 0 0 1"/>
+  </material>
+
   <!-- Link base -->
   <link name="base_link">
     <visual>
       <geometry>
-        <box size="0.4 0.4 0.1"/>
+        <box size="0.2 0.2 0.1"/>
       </geometry>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <material name="blue">
-        <color rgba="0 0 1 1"/>
-      </material>
+      <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <box size="0.2 0.2 0.1"/>
+      </geometry>
+    </collision>
   </link>
 
   <!-- Link brazo -->
   <link name="arm_link">
     <visual>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.5" radius="0.05"/>
+        <cylinder length="0.3" radius="0.05"/>
       </geometry>
-      <origin xyz="0 0 0.25" rpy="0 0 0"/>
-      <material name="red">
-        <color rgba="1 0 0 1"/>
-      </material>
+      <material name="red"/>
     </visual>
+    <collision>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.3" radius="0.05"/>
+      </geometry>
+    </collision>
   </link>
 
   <!-- Articulación entre base_link y arm_link -->
   <joint name="base_to_arm" type="revolute">
     <parent link="base_link"/>
     <child link="arm_link"/>
-    <origin xyz="0 0 0.05" rpy="0 0 0"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10.0" velocity="1.0" lower="-3.14" upper="3.14"/>
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="1.0"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
   </joint>
 
 </robot>
